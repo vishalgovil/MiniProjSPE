@@ -1,0 +1,2 @@
+[ubuntu18]
+172.16.135.4 ansible_user=vishal
