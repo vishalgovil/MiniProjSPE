@@ -4,5 +4,5 @@
   tasks:
     - name: Pull image
       docker_image:
-        name: vishalgovil/calculatordevops
+        name: vishalgovil/miniprojspe
         source: pull
