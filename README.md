@@ -1,2 +1,2 @@
 # MiniProjSPE
-MiniProject with DevOps Pipeline using Jenkins
+MiniProject with DevOps Pipeline using Jenkins and Ansible
