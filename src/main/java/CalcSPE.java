@@ -16,8 +16,8 @@ public class CalcSPE {
         double num1, num2;
         do {
             System.out.println("Calculator-DevOps, Choose to perform operation");
-            System.out.print("Press 1 for Square Root\nPress 2 to Factorial\nPress 3 to find Logarithm\nPress 4 to find Power\n" +
-                    "Press 5 to exit\nEnter your choice: ");
+            System.out.print("Enter 1 for Square Root\nEnter 2 for Factorial\nEnter 3 for Logarithm\nEnter 4 for Power\n" +
+                    "Enter 5 to exit\nEnter your choice: ");
             int choice;
             try {
                 choice = scanner.nextInt();
@@ -26,6 +26,7 @@ public class CalcSPE {
             }
 
             switch (choice) {
+
                 case 1:
 
                     System.out.print("Enter a number : ");
@@ -61,6 +62,26 @@ public class CalcSPE {
                     System.out.println("\n");
                     break;
 
+                case 5:
+
+                    System.out.print("Enter the first number : ");
+                    num1 = scanner.nextDouble();
+                    System.out.print("Enter the second number : ");
+                    num2 = scanner.nextDouble();
+                    System.out.println(" Result : "+num1 +" + "+num2+" "+ calc.add(num1, num2));
+                    System.out.println("\n");
+                    break;
+                case 6:
+                    System.out.print("Enter the first number : ");
+                    num1 = scanner.nextDouble();
+                    System.out.print("Enter the second number : ");
+                    num2 = scanner.nextDouble();
+                    System.out.println(" Result : "+num1 +" + "+num2+" "+ calc.sub(num1, num2));
+                    System.out.println("\n");
+                    break;
+
+
+
 
 
                 default:
@@ -70,6 +91,23 @@ public class CalcSPE {
         } while (true);
     }
 
+    public double sub(double number1, double number2)
+    {
+        logger.info("[SUBTRACTION OF - " + number2 + " FROM] " + number1);
+        double result = number1 - number2;
+        logger.info("[RESULT - SUBTRACTION] - " + result);
+        return result;
+
+    }
+
+    public double add(double number1, double number2)
+    {
+        logger.info("[ADDITION OF - " + number1 + " WITH] " + number2);
+        double result = number1 + number2;
+        logger.info("[RESULT - ADDITION] - " + result);
+        return result;
+
+    }
     public double fact(double num) {
         logger.info("[FACTORIAL] - " + num);
         double facto = 1;
