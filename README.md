@@ -4,3 +4,4 @@ Just checking webhooks and installing git integration plugin chance 244
 Adding  / in the end 
 Checking with final project
 ## Run commands
+docker -run --name -it <image name>
