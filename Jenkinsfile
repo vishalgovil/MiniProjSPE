@@ -23,7 +23,8 @@ pipeline {
         stage('Docker Build') {
             steps {
                 script{
-                    imageName = docker.build "vishalgovil/calculatordevops:latest"
+                    imageName = docker.build "vishalgovil/miniprojspe:latest"
+                    
                 }
             }
         }
